@@ -1,5 +1,4 @@
-main.d main.o: .././main.cpp .././pin.h .././button.h \
- ..\\..\ArduinoCore\include\core/Arduino.h \
+main.d main.o: .././main.cpp ..\\..\ArduinoCore\include\core/Arduino.h \
  d:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h \
  d:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h \
  d:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
@@ -33,12 +32,9 @@ main.d main.o: .././main.cpp .././pin.h .././button.h \
  d:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  d:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  ..\\..\ArduinoCore\include\core/Arduino.h \
- ..\\..\ArduinoCore\include\variants\standard/pins_arduino.h .././led.h \
- .././motor.h .././param.h .././timer.h .././batteryMonitor.h
-
-.././pin.h:
-
-.././button.h:
+ ..\\..\ArduinoCore\include\variants\standard/pins_arduino.h .././pin.h \
+ .././button.h .././led.h .././motor.h .././param.h .././timer.h \
+ .././batteryMonitor.h
 
 ..\\..\ArduinoCore\include\core/Arduino.h:
 
@@ -109,6 +105,10 @@ d:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 ..\\..\ArduinoCore\include\core/Arduino.h:
 
 ..\\..\ArduinoCore\include\variants\standard/pins_arduino.h:
+
+.././pin.h:
+
+.././button.h:
 
 .././led.h:
 

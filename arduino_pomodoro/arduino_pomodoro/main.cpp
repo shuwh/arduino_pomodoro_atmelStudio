@@ -1,8 +1,10 @@
 ﻿// include all the required files
 // #include "condition.h"
 
-#define _DEBUG_
 
+// #define _DEBUG_
+
+#include "Arduino.h"
 #include "pin.h"
 #include "button.h"
 #include "led.h"
