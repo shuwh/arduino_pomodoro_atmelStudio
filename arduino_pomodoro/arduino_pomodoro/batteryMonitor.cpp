@@ -38,11 +38,11 @@ void BatteryMonitor::checkBatteryStatus()
       bool batteryStat = digitalRead(this->batteryMonitorPin);
       if (batteryStat == LOW)
       {
-        digitalWrite(this->batteryLEDPin, HIGH);
+        digitalWrite(this->batteryLEDPin, LOW);
       }
       else
       {
-        digitalWrite(this->batteryLEDPin, LOW);
+        digitalWrite(this->batteryLEDPin, HIGH);
       }
       digitalWrite(this->batteryEnablePin, HIGH);
       this->prevTime = millis();

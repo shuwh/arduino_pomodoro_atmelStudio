@@ -274,14 +274,14 @@ void BatteryMonitor::checkBatteryStatus()
  200:	89 2b       	or	r24, r25
  202:	11 f4       	brne	.+4      	; 0x208 <_ZN14BatteryMonitor18checkBatteryStatusEv+0x84>
       {
-        digitalWrite(this->batteryLEDPin, HIGH);
- 204:	61 e0       	ldi	r22, 0x01	; 1
+        digitalWrite(this->batteryLEDPin, LOW);
+ 204:	60 e0       	ldi	r22, 0x00	; 0
  206:	01 c0       	rjmp	.+2      	; 0x20a <_ZN14BatteryMonitor18checkBatteryStatusEv+0x86>
       }
       else
       {
-        digitalWrite(this->batteryLEDPin, LOW);
- 208:	60 e0       	ldi	r22, 0x00	; 0
+        digitalWrite(this->batteryLEDPin, HIGH);
+ 208:	61 e0       	ldi	r22, 0x01	; 1
  20a:	8e 85       	ldd	r24, Y+14	; 0x0e
  20c:	0e 94 88 05 	call	0xb10	; 0xb10 <digitalWrite>
       }
